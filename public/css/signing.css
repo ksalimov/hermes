@@ -1,0 +1,75 @@
+/*Fonts start*/
+@font-face {
+    font-family: 'Texgyreadventor-regular';
+    src: url('../fonts/texgyreadventor-regular.eot');
+    src: local('☺'), url('../fonts/texgyreadventor-regular.woff') format('woff'), url('../fonts/texgyreadventor-regular.ttf') format('truetype'), url('../fonts/texgyreadventor-regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Texgyreadventor-bold';
+    src: url('../fonts/texgyreadventor-bold.eot');
+    src: local('☺'), url('../fonts/texgyreadventor-bold.woff') format('woff'), url('../fonts/texgyreadventor-bold.ttf') format('truetype'), url('../fonts/texgyreadventor-bold.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/*Fonts end*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Texgyreadventor-regular',arial, verdana, tahoma, sans-serif;
+}
+body {
+    background: #1c1c1c;
+    text-align: center;
+}
+a .navigate-back {
+    margin-top: 30px;
+}
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 25%;
+    height: 239px;
+    margin-top: -119.5px;
+    margin-left: -12.5%;
+}
+h2 {
+    color: white;
+    letter-spacing: 0.7px;
+}
+h2 span {
+    font-size: 0.75em;
+    letter-spacing: 2px;
+}
+form * {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+form input {
+    margin-top: 25px;
+    padding: 9px;
+    border: 3px solid transparent;
+}
+form input[type='submit'] {
+    font-family: 'Texgyreadventor-bold', arial, verdana, tahoma, sans-serif;
+    letter-spacing: 1px;
+    background-color: #bd953e;
+    border: 3px solid transparent;
+    color: white;
+    margin-bottom: 0;
+}
+form input[type='submit']:hover {
+    cursor: pointer;
+    background-color: #cfa344;
+}
+form input[type='submit']:focus {
+    outline: none;
+}
+form .error {
+    color: red;
+    text-align: left;
+}
