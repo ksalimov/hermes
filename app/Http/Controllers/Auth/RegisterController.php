@@ -9,6 +9,8 @@ use Illuminate\Foundation\Auth\RegistersUsers;
 
 class RegisterController extends Controller
 {
+
+
     /*
     |--------------------------------------------------------------------------
     | Register Controller
@@ -21,6 +23,11 @@ class RegisterController extends Controller
     */
 
     use RegistersUsers;
+
+    /**
+     * Default role for user.
+     */
+    const DEFAULT_ROLE = '2';
 
     /**
      * Where to redirect users after login / registration.
@@ -66,6 +73,7 @@ class RegisterController extends Controller
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
+            'role' => self::DEFAULT_ROLE
         ]);
     }
 }
