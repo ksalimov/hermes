@@ -33,10 +33,6 @@
             <input type="hidden" name="action" value="login">
         </form>
     </div>
-
-    <script src="js/jquery-2.2.3.min.js"></script>
-    <script src="js/jquery.form.min.js"></script>
-    <script src="js/signing.js"></script>
 </body>
 </html>
 
